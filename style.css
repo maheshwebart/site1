@@ -133,7 +133,7 @@ header{
 display:grid;
 grid-area:header;
  background-color: rgb(36, 36, 36) !important;
- justify-content: center;
+
 
 /* grid-template-columns: minmax(1fr, 960px) */
     
