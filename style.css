@@ -488,7 +488,18 @@ footer .container ul li a{
     }
 }
 
+.hidden{
+  opacity: 0 !important;
+  filter:blur(5x);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
 
+.show {
+  opacity: 1 !important;
+  transform: translateX(0);
+  filter: blur(0)
+}
 
 @media screen and (max-width:1024px) {
 
