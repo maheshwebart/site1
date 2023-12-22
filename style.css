@@ -797,7 +797,7 @@ section#page{
     header .container{
         display: flex;
         background-image: url("images/background-768.png") !important;
-        background-size:contain !important;
+        background-size:cover !important;
         padding:2rem 2rem !important;
         overflow-y: hidden;
         height: auto !important;
