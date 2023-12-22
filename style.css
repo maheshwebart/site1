@@ -382,6 +382,45 @@ ul.num li span{
     border-radius:20px ;
 }
 
+
+.stats .container h3:nth-child(1){
+animation-delay: 0.5s;
+}
+
+.stats .container p:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+
+.stats .container h3:nth-child(1){
+  animation-delay: 1s;
+}
+
+.stats .container p:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.stats .container h3:nth-child(1){
+  animation-delay: 2s;
+}
+
+.stats .container p:nth-child(1) {
+  animation-delay: 2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .slog {
     grid-area:slog;
 }
@@ -687,7 +726,7 @@ footer .container ul li a{
             column-gap: 3rem;
         }
         
-    
+      
 }
 
 
@@ -936,6 +975,19 @@ footer{
 footer .container{
     grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
+}
+
+.hidden{
+  opacity: 1 !important;
+  filter:none;
+  transform:none;
+  transition:none
+}
+
+.show {
+  opacity: 1 !important;
+  transform: none;
+  filter: none
 }
 
 }
