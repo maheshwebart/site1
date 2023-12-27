@@ -39,6 +39,7 @@ section#page {
     position: sticky;
     top:0;
     width: 100%;
+    z-index: 999;
 
     
 }
@@ -117,8 +118,17 @@ section#page {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin:10px
+    margin:10px;
+    transition: 0.3s;
+   
 }
+
+.nav-menu .button h3 a:hover, header .button h3 a:hover {
+  background: linear-gradient(to top, rgb(239, 104, 216), rgb(135, 43, 248));
+  transform: translateX(-2px);
+}
+
+
 .top-navbar .container nav ul li a{
     text-decoration: none;
    color: honeydew;
@@ -136,6 +146,7 @@ header{
 display:grid;
 grid-area:header;
  background-color: rgb(36, 36, 36) !important;
+ /* z-index: -9; */
 
 
 /* grid-template-columns: minmax(1fr, 960px) */
@@ -164,6 +175,7 @@ header .button h3 a{
     display: flex;
     width:150px;
     height:50px;
+    /* background-color: #01fbf8; */
     background: linear-gradient(to top, rgb(228, 59, 202), rgb(108, 9, 229));
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
@@ -175,7 +187,7 @@ header .button h3 a{
     justify-content: center;
     align-items: center;
     margin:10px;
-    
+    transition: 0.3s;
 }
 
 
@@ -533,13 +545,14 @@ footer .container ul li a{
 .hidden{
   opacity: 0 !important;
   filter:blur(5x);
-  transform: translateX(-100%);
+  transform: translateX(-100%); 
   transition: all 1s;
 }
 
 .show {
   opacity: 1 !important;
   transform: translateX(0);
+  /* transform: rotateX(0); */
   filter: blur(0)
 }
 
